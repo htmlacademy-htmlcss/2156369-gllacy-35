@@ -34,13 +34,14 @@ body {
   line-height: 20px;
 }
 
-.navigation-user li:first-child {
-  font-weight: 700;
-}
-
-.navigation-user li:not(:first-child) {
+.navigation-user li {
   font-size: 14px;
   background: rgba(252, 252, 252, 0.3);
+}
+
+.navigation-user .navigation-link-phone {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .navigation-link {
@@ -73,7 +74,7 @@ body {
 }
 
 .promo-item {
-  background: #FF7799;
+  background-color: #FF7799;
   border-radius: 16px;
 }
 
@@ -92,7 +93,7 @@ body {
 
 .popular-item {
   text-align: center;
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   border-radius: 8px;
 }
 
