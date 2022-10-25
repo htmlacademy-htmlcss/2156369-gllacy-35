@@ -181,55 +181,72 @@
 
         <section class="popular">
           <h2 class="popular-title section-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-          <ul class="popular-list">
-            <li class="popular-item">
-              <img class="popular-img" src="images/catalog1-raspberry.jpg" alt="Шарик мороженого малиновый" width="168"
-                height="168">
-              <h3 class="popular-item-title">Малинка</h3>
-              <p class="popular-item-description">Сливочное мороженое с малиновым джемом</p>
-              <div class="popular-order">
-                <p class="popular-price">310 ₽/кг</p>
-                <button class="popular-order-button">
+          <ul class="cards-list">
+            <li class="popular-item card-item">
+              <a href="#" class="card-img-link">
+                <img class="card-img" src="images/catalog1-raspberry.jpg" alt="Шарик мороженого малиновый" width="168"
+                  height="168">
+              </a>
+              <a class="card-item-link" href="#">
+                <h3 class="card-item-title">Малинка</h3>
+              </a>
+              <p class="card-item-description">Сливочное мороженое с малиновым джемом</p>
+              <div class="card-order">
+                <p class="card-price">310 ₽/кг</p>
+                <button class="card-order-button">
                   <span class="visually-hidden">В корзину</span>
                 </button>
               </div>
             </li>
-            <li class="popular-item">
-              <img class="popular-img" src="images/catalog2-pistachio.jpg" alt="Шарик мороженого фисташковый"
-                width="168" height="168">
-              <h3 class="popular-item-title">Фисташка</h3>
-              <p class="popular-item-description">Фисташковый пломбир с кусочками шоколада</p>
-              <div class="popular-order">
-                <p class="popular-price">340 ₽/кг</p>
-                <button class="popular-order-button">
+            <li class="popular-item card-item">
+              <a href="#" class="card-img-link">
+                <img class="card-img" src="images/catalog2-pistachio.jpg" alt="Шарик мороженого фисташковый" width="168"
+                  height="168">
+              </a>
+              <a class="card-item-link" href="#">
+                <h3 class="card-item-title">Фисташка</h3>
+              </a>
+              <p class="card-item-description">Фисташковый пломбир с кусочками шоколада</p>
+              <div class="card-order">
+                <p class="card-price">340 ₽/кг</p>
+                <button class="card-order-button">
                   <span class="visually-hidden">В корзину</span>
                 </button>
               </div>
             </li>
-            <li class="popular-item">
-              <img class="popular-img" src="images/catalog3-blueberry.jpg" alt="Шарик мороженого черничный" width="168"
-                height="168">
-              <h3 class="popular-item-title">Черника</h3>
-              <p class="popular-item-description">Крем-брюле с черничным джемом</p>
-              <div class="popular-order">
-                <p class="popular-price">330 ₽/кг</p>
-                <button class="popular-order-button">
+            <li class="popular-item card-item">
+              <a href="#" class="card-img-link">
+                <img class="card-img" src="images/catalog3-blueberry.jpg" alt="Шарик мороженого черничный" width="168"
+                  height="168">
+              </a>
+              <a class="card-item-link" href="#">
+                <h3 class="card-item-title">Черника</h3>
+              </a>
+              <p class="card-item-description">Крем-брюле с черничным джемом</p>
+              <div class="card-order">
+                <p class="card-price">330 ₽/кг</p>
+                <button class="card-order-button">
                   <span class="visually-hidden">В корзину</span>
                 </button>
               </div>
             </li>
-            <li class="popular-item">
-              <img class="popular-img" src="images/catalog4-bubble-gum.jpg" alt="Шарик мороженого бабл-гам" width="168"
-                height="168">
-              <h3 class="popular-item-title">Бабл-гам</h3>
-              <p class="popular-item-description">Ванильный пломбир со сладкой посыпкой</p>
-              <div class="popular-order">
-                <p class="popular-price">320 ₽/кг</p>
-                <button class="popular-order-button">
+            <li class="popular-item card-item">
+              <a href="#" class="card-img-link">
+                <img class="card-img" src="images/catalog4-bubble-gum.jpg" alt="Шарик мороженого бабл-гам" width="168"
+                  height="168">
+              </a>
+              <a class="card-item-link" href="#">
+                <h3 class="card-item-title">Бабл-гам</h3>
+              </a>
+              <p class="card-item-description">Ванильный пломбир со сладкой посыпкой</p>
+              <div class="card-order">
+                <p class="card-price">320 ₽/кг</p>
+                <button class="card-order-button">
                   <span class="visually-hidden">В корзину</span>
                 </button>
               </div>
             </li>
+
           </ul>
         </section>
 
@@ -297,24 +314,28 @@
             <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
               Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
-          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+          <div class="delivery-block">
+            <p class="delivery-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
             </p>
-            <p class="delivery-form-date">
-              <label class="form-label" for="delivery-date">Дата</label>
-              <input name="date" id="delivery-date" type="text" placeholder="01.04.2020" required>
-            </p>
-            <p class="delivery-form-phone">
-              <label class="form-label" for="delivery-phone">Телефон</label>
-              <input name="phone" id="delivery-phone" type="text" placeholder="+7 800 999-00-00">
-            </p>
-            <p class="delivery-form-address">
-              <label class="form-label" for="delivery-address">Адрес</label>
-              <input name="address" id="delivery-address" type="text" placeholder="ул. Большая Конюшенная, 19/8"
-                required>
-            </p>
-            <button class="delivery-form-button form-button button" type="submit">Отправить</button>
-          </form>
+            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <p class="delivery-form-date delivery-field">
+                <label class="form-label" for="delivery-date">Дата</label>
+                <input name="date" id="delivery-date" type="text" placeholder="01.04.2020" required>
+              </p>
+              <p class="delivery-form-phone delivery-field">
+                <label class="form-label" for="delivery-phone">Телефон</label>
+                <input name="phone" id="delivery-phone" type="text" placeholder="+7 800 999-00-00">
+              </p>
+              <p class="delivery-form-address delivery-field">
+                <label class="form-label" for="delivery-address">Адрес</label>
+                <input name="address" id="delivery-address" type="text" placeholder="ул. Большая Конюшенная, 19/8"
+                  required>
+              </p>
+              <button class="delivery-form-button form-button button" type="submit">Отправить</button>
+            </form>
+          </div>
+
         </section>
 
         <section class="contacts">
