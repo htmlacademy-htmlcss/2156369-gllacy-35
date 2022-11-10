@@ -23,6 +23,27 @@
                     d="M1.808 1.053a.667.667 0 0 0-.943.943l4.66 4.66a.665.665 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943L6.003 5.248 1.808 1.053Z" />
                 </svg>
               </a>
+              <div class="popover popover-catalog">
+                <div class="popover-content">
+                  <ul class="catalog-list">
+                    <li class="catalog-item">
+                      <a class="catalog-item-link" href="#">Новинки</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-item-link" href="#">Сливочное</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-item-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-item-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-item-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -35,6 +56,7 @@
             <li class="navigation-item">
               <a class="navigation-link navigation-link-phone" href="tel:88005558628">+7 800 555-86-28</a>
             </li>
+
             <li class="navigation-item">
               <a class="navigation-link navigation-link-search" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="14" height="14"
@@ -44,21 +66,105 @@
                 </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
+              <div class="popover popover-search">
+                <form class="form-search" action="get">
+                  <label class="visually-hidden" for="search">Поиск по сайту</label>
+                  <input class="field search-field" type="text" id="search" name="search" placeholder="Поиск по сайту">
+                </form>
+              </div>
+
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-login" href="#">
+              <a class="navigation-link navigation-link-icon" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="14" height="15"
                   viewBox="0 0 14 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M8 1.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H8.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 12 12.19V2.858a.666.666 0 0 0-.667-.667H8.667A.667.667 0 0 1 8 1.525ZM4.862 3.72c.26-.26.682-.26.943 0l3.329 3.329a.673.673 0 0 1 .2.476.664.664 0 0 1-.2.476l-3.33 3.328a.667.667 0 1 1-.942-.943l2.195-2.195H.667a.667.667 0 1 1 0-1.333h6.39L4.862 4.663a.667.667 0 0 1 0-.943Z" />
                 </svg>
                 Вход</a>
+
+              <div class="popover popover-login">
+                <div class="popover-content">
+                  <h2 class="popover-login-title">Личный кабинет</h2>
+                  <form class="form-login" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="visually-hidden" for="login">Введите ваш email</label>
+                    <input class="field login-field" type="email" name="login" placeholder="email@example.com"
+                      id="login">
+                    <label class="visually-hidden" for="password"></label>
+                    <input class="field login-field" type="password" name="password" id="password"
+                      placeholder="&#183;&#183;&#183;&#183;&#183;&#183;">
+                    <div class="links-block">
+                      <a class="button form-button login-button" href="#">Войти</a>
+                      <div class="login-help-link">
+                        <a class="link-login" href="#">Забыли пароль?</a>
+                        <a class="link-login" href="#">Регистрация</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-cart" href="#">
+              <a class="navigation-link navigation-link-icon" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="15" height="14"
+                  viewBox="0 0 15 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" />
+                </svg>
                 <span class="visually-hidden">Корзина</span>
                 <span>2</span> товара
               </a>
+
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="cart-item-list">
+                    <li class="cart-item">
+                      <img class="cart-item-img" src="images/catalog1-raspberry.jpg" alt="Шарик мороженого малинка."
+                        width="46px" height="46px">
+                      <div class="cart-item-description">
+                        <h3 class="cart-item-description-title">Малинка</h3>
+                        <p class="cart-item-description-weight">1 кг х 310 ₽</p>
+                      </div>
+                      <p class="cart-item-price">310 ₽</p>
+                      <button class="cart-button-remove" type="button">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z"
+                            fill="#2D3440" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+
+                    <li class="cart-item">
+                      <img class="cart-item-img" src="images/catalog4-bubble-gum.jpg" alt="Шарик мороженого бабл-гам."
+                        width="46px" height="46px">
+                      <div class="cart-item-description">
+                        <h3 class="cart-item-description-title">Бабл-гам</h3>
+                        <p class="cart-item-description-weight">1,5 кг х 320 ₽</p>
+                      </div>
+                      <p class="cart-item-price">480 ₽</p>
+                      <button class="cart-button-remove" type="button">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z"
+                            fill="#2D3440" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-total">
+                    <a class="button form-button" href="#">Оформить заказ</a>
+                    <p class="total-price">Итого: <span class="total">790</span> ₽</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popover popover-cart-empty">
+                <p class="cart-empty-text">Ваша корзина пока пуста</p>
+              </div>
             </li>
           </ul>
         </nav>
@@ -374,7 +480,8 @@
                 Честно =)</p>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="email">Email</label>
-                <input name="email" id="email" type="email" placeholder="email@example.com" required>
+                <input class="subscribe-field field" name="email" id="email" type="email"
+                  placeholder="email@example.com">
                 <button class="subscribe-form-button form-button button" type="submit">Отправить</button>
               </form>
             </div>
@@ -388,22 +495,22 @@
               Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
           <div class="delivery-block">
-            <p class="delivery-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+            <p class="delivery-block-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
             </p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
 
               <p class="delivery-form-date delivery-field">
                 <label class="form-label" for="delivery-date">Дата</label>
-                <input name="date" id="delivery-date" type="text" placeholder="01.04.2020" required>
+                <input class="field" name="date" id="delivery-date" type="text" placeholder="01.04.2020">
               </p>
               <p class="delivery-form-phone delivery-field">
                 <label class="form-label" for="delivery-phone">Телефон</label>
-                <input name="phone" id="delivery-phone" type="text" placeholder="+7 800 999-00-00">
+                <input class="field" name="phone" id="delivery-phone" type="text" placeholder="+7 800 999-00-00">
               </p>
               <p class="delivery-form-address delivery-field">
                 <label class="form-label" for="delivery-address">Адрес</label>
-                <input name="address" id="delivery-address" type="text" placeholder="ул. Большая Конюшенная, 19/8"
-                  required>
+                <input class="field" name="address" id="delivery-address" type="text"
+                  placeholder="ул. Большая Конюшенная, 19/8">
               </p>
               <button class="delivery-form-button form-button button" type="submit">Отправить</button>
             </form>
@@ -490,6 +597,16 @@
       </footer>
     </div>
 
+    <div class="modal-container">
+      <div class="modal modal-feedback">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+        </section>
+      </div>
+    </div>
 
   </body>
 
