@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body>
+  <body class="bg-pink">
     <div class="wrapper">
       <header class="main-header">
         <nav class="navigation">
@@ -67,7 +67,7 @@
                 <span class="visually-hidden">Поиск</span>
               </a>
               <div class="popover popover-search">
-                <form class="form-search" action="get">
+                <form class="form-search" action="get" action="https://echo.htmlacademy.ru/">
                   <label class="visually-hidden" for="search">Поиск по сайту</label>
                   <input class="field search-field" type="text" id="search" name="search" placeholder="Поиск по сайту">
                 </form>
@@ -92,7 +92,7 @@
                       id="login">
                     <label class="visually-hidden" for="password"></label>
                     <input class="field login-field" type="password" name="password" id="password"
-                      placeholder="&#183;&#183;&#183;&#183;&#183;&#183;">
+                      placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
                     <div class="links-block">
                       <a class="button form-button login-button" href="#">Войти</a>
                       <div class="login-help-link">
@@ -500,7 +500,21 @@
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
 
               <p class="delivery-form-date delivery-field">
-                <label class="form-label" for="delivery-date">Дата</label>
+                <span class="form-label form-label-icon">
+                  <label class="form-label" for="delivery-date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="14" height="14"
+                        viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"
+                          fill="#2D3440" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату
+                      доставки</span>
+                  </span>
+                </span>
                 <input class="field" name="date" id="delivery-date" type="text" placeholder="01.04.2020">
               </p>
               <p class="delivery-form-phone delivery-field">
@@ -508,7 +522,21 @@
                 <input class="field" name="phone" id="delivery-phone" type="text" placeholder="+7 800 999-00-00">
               </p>
               <p class="delivery-form-address delivery-field">
-                <label class="form-label" for="delivery-address">Адрес</label>
+                <span class="form-label form-label-icon">
+                  <label class="form-label" for="delivery-address">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="14" height="14"
+                        viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"
+                          fill="#2D3440" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите название улицы, дома и
+                      квартиры</span>
+                  </span>
+                </span>
                 <input class="field" name="address" id="delivery-address" type="text"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </p>
@@ -597,13 +625,30 @@
       </footer>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-feedback">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
+              <input class="field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="feedback-email">Ваш email</label>
+              <input class="field" type="email" id="feedback-email" name="feedback-email"
+                placeholder="email@example.com">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="feedback-comment">Комментарий</label>
+              <textarea class="field field-comment" id="feedback-comment" name="feedback-comment" rows="6"
+                placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button form-button modal-button" type="submit">Отправить</button>
+          </form>
         </section>
       </div>
     </div>
