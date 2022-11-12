@@ -52,6 +52,7 @@
               <a class="navigation-link" href="#">О компании</a>
             </li>
           </ul>
+
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-link navigation-link-phone" href="tel:88005558628">+7 800 555-86-28</a>
@@ -89,10 +90,10 @@
                   <form class="form-login" action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually-hidden" for="login">Введите ваш email</label>
                     <input class="field login-field" type="email" name="login" placeholder="email@example.com"
-                      id="login">
+                      id="login" required>
                     <label class="visually-hidden" for="password"></label>
                     <input class="field login-field" type="password" name="password" id="password"
-                      placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                      placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" required>
                     <div class="links-block">
                       <a class="button form-button login-button" href="#">Войти</a>
                       <div class="login-help-link">
@@ -104,7 +105,8 @@
                 </div>
               </div>
             </li>
-            <li class="navigation-item">
+
+            <li class="navigation-item navigation-cart">
               <a class="navigation-link navigation-link-icon" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +125,7 @@
                       <img class="cart-item-img" src="images/catalog1-raspberry.jpg" alt="Шарик мороженого малинка."
                         width="46px" height="46px">
                       <div class="cart-item-description">
-                        <h3 class="cart-item-description-title">Малинка</h3>
+                        <h3 class="cart-item-description-title"><a href="#">Малинка</a></h3>
                         <p class="cart-item-description-weight">1 кг х 310 ₽</p>
                       </div>
                       <p class="cart-item-price">310 ₽</p>
@@ -141,7 +143,7 @@
                       <img class="cart-item-img" src="images/catalog4-bubble-gum.jpg" alt="Шарик мороженого бабл-гам."
                         width="46px" height="46px">
                       <div class="cart-item-description">
-                        <h3 class="cart-item-description-title">Бабл-гам</h3>
+                        <h3 class="cart-item-description-title"><a href="#">Бабл-гам</a></h3>
                         <p class="cart-item-description-weight">1,5 кг х 320 ₽</p>
                       </div>
                       <p class="cart-item-price">480 ₽</p>
@@ -206,7 +208,7 @@
                   <h3 class="slider-title section-title">Сливочное мороженое со вкусом банана</h3>
                   <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
                     наслаждение даже в самый жаркий летний день. </p>
-                  <a class="button" href="#">Заказать</a>
+                  <a class="button button-next" href="#" tabindex="-1">Заказать</a>
                 </div>
                 <div class="slider-block">
                   <img class="slider-block-img slider-block-img-active" src="images/slider2-banana.png"
@@ -223,7 +225,7 @@
                   <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира
                     завоюет
                     сердца сладкоежек всех возрастов. </p>
-                  <a class="button" href="#">Заказать</a>
+                  <a class="button button-next" href="#" tabindex="-1">Заказать</a>
                 </div>
                 <div class="slider-block">
                   <img class="slider-block-img slider-block-img-active" src="images/slider3-marshmellou.png"
@@ -481,7 +483,7 @@
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="email">Email</label>
                 <input class="subscribe-field field" name="email" id="email" type="email"
-                  placeholder="email@example.com">
+                  placeholder="email@example.com" required>
                 <button class="subscribe-form-button form-button button" type="submit">Отправить</button>
               </form>
             </div>
@@ -515,11 +517,12 @@
                       доставки</span>
                   </span>
                 </span>
-                <input class="field" name="date" id="delivery-date" type="text" placeholder="01.04.2020">
+                <input class="field" name="date" id="delivery-date" type="text" placeholder="01.04.2020" required>
               </p>
               <p class="delivery-form-phone delivery-field">
                 <label class="form-label" for="delivery-phone">Телефон</label>
-                <input class="field" name="phone" id="delivery-phone" type="text" placeholder="+7 800 999-00-00">
+                <input class="field" name="phone" id="delivery-phone" type="text" placeholder="+7 800 999-00-00"
+                  required>
               </p>
               <p class="delivery-form-address delivery-field">
                 <span class="form-label form-label-icon">
@@ -538,7 +541,7 @@
                   </span>
                 </span>
                 <input class="field" name="address" id="delivery-address" type="text"
-                  placeholder="ул. Большая Конюшенная, 19/8">
+                  placeholder="ул. Большая Конюшенная, 19/8" required>
               </p>
               <button class="delivery-form-button form-button button" type="submit">Отправить</button>
             </form>
@@ -635,12 +638,13 @@
           <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
-              <input class="field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия">
+              <input class="field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия"
+                required>
             </p>
             <p class="field-group">
               <label class="visually-hidden" for="feedback-email">Ваш email</label>
               <input class="field" type="email" id="feedback-email" name="feedback-email"
-                placeholder="email@example.com">
+                placeholder="email@example.com" required>
             </p>
             <p class="field-group">
               <label class="visually-hidden" for="feedback-comment">Комментарий</label>

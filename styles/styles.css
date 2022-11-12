@@ -906,8 +906,8 @@ body {
   border: 1px solid #EA5454;
 }
 
-.field:focus:invalid {
-  border: 2px solid #EA5454;
+.field:invalid:hover {
+  outline: 2px solid #EA5454;
 }
 
 .field:disabled {
@@ -1626,6 +1626,11 @@ body {
   color: #B9B9B9;
 }
 
+.cart-item-description-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .cart-item-price {
   font-weight: 700;
   font-size: 18px;
@@ -1653,6 +1658,7 @@ body {
   font-size: 18px;
   line-height: 22px;
 }
+
 
     /* Empty cart */
 
@@ -1819,6 +1825,16 @@ body {
 .catalog-item:focus-within .catalog-item-link {
   color: #FCFCFC;
   outline: 1px solid #2D3440;
+}
+
+     /* Popover - focus */
+
+.navigation-item:focus-within .popover {
+  display: block;
+}
+
+.navigation-link:hover + .popover {
+  display: block;
 }
 
      /* Modal */
