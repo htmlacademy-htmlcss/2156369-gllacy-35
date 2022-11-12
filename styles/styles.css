@@ -34,6 +34,7 @@ html {
 
 body {
   height: 100%;
+  /* min-width: 1170px; */
   margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -152,6 +153,7 @@ body {
 
 .navigation-item {
   position: relative;
+  margin-bottom: 5px;
 }
 
 .navigation-user .navigation-item {
@@ -254,6 +256,7 @@ body {
 
 .slider-item {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-left: 70px;
 }
@@ -319,6 +322,7 @@ body {
 
 .slider-button {
   position: absolute;
+  display: block;
   width: 38px;
   height: 38px;
   cursor: pointer;
@@ -329,10 +333,6 @@ body {
   color: #FCFCFC;
   outline: none;
   transform: translate(-50%);
-}
-
-.slider-button-wrapper {
-  position: relative;
 }
 
 .slider-button-icon {
@@ -527,7 +527,7 @@ body {
 }
 
 .promo-item-text {
-  padding: 36px 0 36px 36px;
+  padding: 36px 20px 36px 36px;
 }
 
 .promo-item-title {
@@ -541,6 +541,7 @@ body {
 .promo-item-description {
   margin: 0;
   margin-bottom: 28px;
+  margin-right: 122px;
 }
 
 .popular {
@@ -608,6 +609,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
+  margin-right: 10px;
 }
 
 .card-order {
@@ -688,8 +690,11 @@ body {
 }
 
 .advantages-item {
-  display: flex;
   width: 505px;
+  min-height: 65px;
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  background-position: left top;
 }
 
 .advanteges-img {
@@ -699,6 +704,23 @@ body {
 .advantages-text {
   color: #565C66;
   margin: 0;
+  margin-left: 64px;
+}
+
+.advantages-item:first-child {
+  background-image: url("../images/advantages1-ice-cream.svg");
+}
+
+.advantages-item:nth-child(2) {
+  background-image: url("../images/advantages2-cow.svg");
+}
+
+.advantages-item:nth-child(3) {
+  background-image: url("../images/advantages3-leaf.svg");
+}
+
+.advantages-item:nth-child(4) {
+  background-image: url("../images/advantages4-thermometer.svg");
 }
 
 .news {
@@ -762,6 +784,7 @@ body {
   flex-grow: 1;
   margin-right: 14px;
   max-width: 332px;
+  max-height: 48px;
 }
 
 .form-button {
@@ -1085,6 +1108,10 @@ body {
   margin-left: -23px;
 }
 
+.footer-copyright {
+  max-width: 200px;
+}
+
 .footer-copyright-text {
   font-size: 12px;
   line-height: 16px;
@@ -1214,6 +1241,7 @@ body {
 
 .range-title {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-label {
@@ -1224,6 +1252,7 @@ body {
 .range-wrapper-label {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .range-input {
@@ -1336,9 +1365,9 @@ body {
 
 .control-input,
 .control-input-fat {
-  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
 }
 
 .control-input:hover + .control-mark,
@@ -1374,6 +1403,8 @@ body {
 
 .fat-wrapper,
 .fill-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   background-color: rgba(252, 252, 252, 0.3);
   padding: 8px 24px;
   border-radius: 18px;
@@ -1473,8 +1504,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
   color: inherit;
   text-decoration: none;
   text-align: center;
@@ -1495,7 +1526,6 @@ body {
   background-repeat: no-repeat;
   background-position: center right 6px;
   width: 24px;
-  margin-left: 8px;
 }
 
 .pagination-link-active {
@@ -1565,7 +1595,7 @@ body {
 }
 
 .popover-cart {
-  top: 40px;
+  top: 44px;
   right: 0;
   width: 441px;
   padding: 48px 46px 48px 48px;
@@ -1667,7 +1697,7 @@ body {
   min-height: 156px;
   padding: 48px 10px;
   right: 0;
-  top: 41px;
+  top: 36px;
 }
 
 .cart-empty-text {
@@ -1689,7 +1719,7 @@ body {
   width: 420px;
   min-height: 350px;
   right: 0;
-  top: 41px;
+  top: 44px;
   padding: 48px 48px 52px 48px;
 }
 
@@ -1750,7 +1780,7 @@ body {
   width: 356px;
   min-height: 96px;
   right: 0;
-  top: 40px;
+  top: 39px;
   padding: 24px 16px;
 }
 
@@ -1766,7 +1796,7 @@ body {
    /* Popover Catalog */
 
 .popover-catalog {
-  top: 40px;
+  top: 44px;
   left: 0;
   width: 135px;
   min-height: 188px;
@@ -1829,12 +1859,28 @@ body {
 
      /* Popover - focus */
 
-.navigation-item:focus-within .popover {
+.navigation-item:focus-within .popover:not(.popover-cart-empty) {
   display: block;
 }
 
-.navigation-link:hover + .popover {
+.navigation-item:hover .popover:not(.popover-cart-empty) {
   display: block;
+}
+
+.navigation-item::after {
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 100%;
+  background-color: transparent;
+  bottom: -8px;
+  left: 0;
+}
+
+.navigation-item-search::after {
+  width: 32px;
+  height: 10px;
+  bottom: -7px;
 }
 
      /* Modal */

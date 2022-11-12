@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Магазин мороженого Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body class="bg-pink">
@@ -58,7 +59,7 @@
               <a class="navigation-link navigation-link-phone" href="tel:88005558628">+7 800 555-86-28</a>
             </li>
 
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-search">
               <a class="navigation-link navigation-link-search" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="14" height="14"
                   viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +69,7 @@
                 <span class="visually-hidden">Поиск</span>
               </a>
               <div class="popover popover-search">
-                <form class="form-search" action="get" action="https://echo.htmlacademy.ru/">
+                <form class="form-search" method="get" action="https://echo.htmlacademy.ru/">
                   <label class="visually-hidden" for="search">Поиск по сайту</label>
                   <input class="field search-field" type="text" id="search" name="search" placeholder="Поиск по сайту">
                 </form>
@@ -123,7 +124,7 @@
                   <ul class="cart-item-list">
                     <li class="cart-item">
                       <img class="cart-item-img" src="images/catalog1-raspberry.jpg" alt="Шарик мороженого малинка."
-                        width="46px" height="46px">
+                        width="46" height="46">
                       <div class="cart-item-description">
                         <h3 class="cart-item-description-title"><a href="#">Малинка</a></h3>
                         <p class="cart-item-description-weight">1 кг х 310 ₽</p>
@@ -141,7 +142,7 @@
 
                     <li class="cart-item">
                       <img class="cart-item-img" src="images/catalog4-bubble-gum.jpg" alt="Шарик мороженого бабл-гам."
-                        width="46px" height="46px">
+                        width="46" height="46">
                       <div class="cart-item-description">
                         <h3 class="cart-item-description-title"><a href="#">Бабл-гам</a></h3>
                         <p class="cart-item-description-weight">1,5 кг х 320 ₽</p>
@@ -238,23 +239,19 @@
               </li>
             </ul>
             <button class="slider-button slider-prev" type="button">
-              <div class="slider-button-wrapper">
-                <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="7" height="12"
-                  viewBox="0 0 7 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.865 11.135a.665.665 0 0 0 .94-.94L2.604 5.994l4.201-4.202a.665.665 0 0 0-.94-.94L1.196 5.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" />
-                </svg>
-              </div>
+              <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="7" height="12"
+                viewBox="0 0 7 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.865 11.135a.665.665 0 0 0 .94-.94L2.604 5.994l4.201-4.202a.665.665 0 0 0-.94-.94L1.196 5.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" />
+              </svg>
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
             <button class="slider-button slider-next" type="button">
-              <div class="slider-button-wrapper">
-                <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="7" height="12"
-                  viewBox="0 0 7 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.135.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94L5.804 6.48l.003-.003c.26-.26.26-.681 0-.94L1.135.864Z" />
-                </svg>
-              </div>
+              <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="7" height="12"
+                viewBox="0 0 7 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.135.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94L5.804 6.48l.003-.003c.26-.26.26-.681 0-.94L1.135.864Z" />
+              </svg>
               <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
@@ -434,31 +431,22 @@
         <section class="advantages">
           <div class="advantages-wrapper">
             <h2 class="advantages-title section-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже
-              мороженого
-              собственного
-              производства на развес</h2>
+              мороженого собственного производства на развес</h2>
             <ul class="advantages-list">
               <li class="advantages-item">
-                <img class="advanteges-img" src="images/advantages1-ice-cream.svg" alt="Мороженое" width="48"
-                  height="48">
                 <p class="advantages-text">Всё наше мороженое изготавливается на собственном производстве с
-                  использованием
-                  современного оборудования и проверенных временем технологий.</p>
+                  использованием современного оборудования и проверенных временем технологий.</p>
               </li>
               <li class="advantages-item">
-                <img class="advanteges-img" src="images/advantages2-cow.svg" alt="Корова" width="48" height="48">
                 <p class="advantages-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
                   которыми нас связывает долговременное сотрудничество.</p>
               </li>
               <li class="advantages-item">
-                <img class="advanteges-img" src="images/advantages3-leaf.svg" alt="Лист" width="48" height="48">
                 <p class="advantages-text">Для приготовления мороженого используются сливки и молоко высочайшего
                   качества.
                   Все ингредиенты и добавки произведены из натурального сырья.</p>
               </li>
               <li class="advantages-item">
-                <img class="advanteges-img" src="images/advantages4-thermometer.svg" alt="Термометр" width="48"
-                  height="48">
                 <p class="advantages-text">Доставка нашего мороженого осуществляется в специальном термопаке, который не
                   даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
               </li>
@@ -528,7 +516,7 @@
                 <span class="form-label form-label-icon">
                   <label class="form-label" for="delivery-address">Адрес</label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
                       <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="14" height="14"
                         viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -536,7 +524,7 @@
                           fill="#2D3440" />
                       </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите название улицы, дома и
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и
                       квартиры</span>
                   </span>
                 </span>

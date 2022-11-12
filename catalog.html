@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Каталог мороженого Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body class="bg-pink">
@@ -67,7 +68,7 @@
                 <span class="visually-hidden">Поиск</span>
               </a>
               <div class="popover popover-search">
-                <form class="form-search" action="get" action="https://echo.htmlacademy.ru/">
+                <form class="form-search" method="get" action="https://echo.htmlacademy.ru/">
                   <label class="visually-hidden" for="search">Поиск по сайту</label>
                   <input class="field search-field" type="text" id="search" name="search" placeholder="Поиск по сайту">
                 </form>
@@ -87,10 +88,10 @@
                 <div class="popover-content">
                   <h2 class="popover-login-title">Личный кабинет</h2>
                   <form class="form-login" action="https://echo.htmlacademy.ru/" method="post">
-                    <label class="visually-hidden" for="login">Введите ваш email</label>
+                    <label class="visually-hidden" for="login">Введите ваш email.</label>
                     <input class="field login-field" type="email" name="login" placeholder="email@example.com"
                       id="login">
-                    <label class="visually-hidden" for="password"></label>
+                    <label class="visually-hidden" for="password">Введите пароль.</label>
                     <input class="field login-field" type="password" name="password" id="password"
                       placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
                     <div class="links-block">
@@ -121,7 +122,7 @@
                   <ul class="cart-item-list">
                     <li class="cart-item">
                       <img class="cart-item-img" src="images/catalog1-raspberry.jpg" alt="Шарик мороженого малинка."
-                        width="46px" height="46px">
+                        width="46" height="46">
                       <div class="cart-item-description">
                         <h3 class="cart-item-description-title">Малинка</h3>
                         <p class="cart-item-description-weight">1 кг х 310 ₽</p>
@@ -139,7 +140,7 @@
 
                     <li class="cart-item">
                       <img class="cart-item-img" src="images/catalog4-bubble-gum.jpg" alt="Шарик мороженого бабл-гам."
-                        width="46px" height="46px">
+                        width="46" height="46">
                       <div class="cart-item-description">
                         <h3 class="cart-item-description-title">Бабл-гам</h3>
                         <p class="cart-item-description-weight">1,5 кг х 320 ₽</p>
@@ -204,14 +205,14 @@
               <legend class="filter-form-title range-title">
                 <span>Цена:</span>
 
-                <div class="range-wrapper-label">
+                <span class="range-wrapper-label">
                   <label class="catalog-filter-label">
                     <input class="range-input" type="number" value="100" name="min-price"> ₽ -
                   </label>
                   <label class="catalog-filter-label">
                     <input class="range-input" type="number" value="500" name="max-price"> ₽
                   </label>
-                </div>
+                </span>
 
               </legend>
 
@@ -259,7 +260,7 @@
 
             <fieldset class="filter-form-block filter-form-block-fill">
               <legend class="filter-form-title">Наполнители:</legend>
-              <div class="fill-wrapper">
+              <span class="fill-wrapper">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="chocolate" checked>
                   <span class="control-mark"></span>
@@ -285,7 +286,7 @@
                   <span class="control-mark"></span>
                   джемы
                 </label>
-              </div>
+              </span>
             </fieldset>
 
             <button class="button filter-form-button" type="submit">Применить</button>
