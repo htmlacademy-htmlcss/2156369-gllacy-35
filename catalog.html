@@ -16,7 +16,7 @@
             <img class="navigation-logo" src="images/logo-gllacy.svg" alt="Логотип Глейси" width="137" height="56">
           </a>
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-catalog">
               <a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог
                 <svg class="navigation-icon navigation-icon-catalog" aria-hidden="true" focusable="false" width="12"
                   height="7" viewBox="0 0 12 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -53,12 +53,13 @@
               <a class="navigation-link" href="#">О компании</a>
             </li>
           </ul>
+
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-link navigation-link-phone" href="tel:88005558628">+7 800 555-86-28</a>
             </li>
 
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-search">
               <a class="navigation-link navigation-link-search" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="14" height="14"
                   viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +76,7 @@
               </div>
 
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-login">
               <a class="navigation-link navigation-link-icon" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="14" height="15"
                   viewBox="0 0 14 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -88,12 +89,12 @@
                 <div class="popover-content">
                   <h2 class="popover-login-title">Личный кабинет</h2>
                   <form class="form-login" action="https://echo.htmlacademy.ru/" method="post">
-                    <label class="visually-hidden" for="login">Введите ваш email.</label>
+                    <label class="visually-hidden" for="login">Введите ваш email</label>
                     <input class="field login-field" type="email" name="login" placeholder="email@example.com"
-                      id="login">
-                    <label class="visually-hidden" for="password">Введите пароль.</label>
+                      id="login" required>
+                    <label class="visually-hidden" for="password"></label>
                     <input class="field login-field" type="password" name="password" id="password"
-                      placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                      placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" required>
                     <div class="links-block">
                       <a class="button form-button login-button" href="#">Войти</a>
                       <div class="login-help-link">
@@ -105,7 +106,8 @@
                 </div>
               </div>
             </li>
-            <li class="navigation-item">
+
+            <li class="navigation-item navigation-cart">
               <a class="navigation-link navigation-link-icon" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +126,7 @@
                       <img class="cart-item-img" src="images/catalog1-raspberry.jpg" alt="Шарик мороженого малинка."
                         width="46" height="46">
                       <div class="cart-item-description">
-                        <h3 class="cart-item-description-title">Малинка</h3>
+                        <h3 class="cart-item-description-title"><a href="#">Малинка</a></h3>
                         <p class="cart-item-description-weight">1 кг х 310 ₽</p>
                       </div>
                       <p class="cart-item-price">310 ₽</p>
@@ -142,7 +144,7 @@
                       <img class="cart-item-img" src="images/catalog4-bubble-gum.jpg" alt="Шарик мороженого бабл-гам."
                         width="46" height="46">
                       <div class="cart-item-description">
-                        <h3 class="cart-item-description-title">Бабл-гам</h3>
+                        <h3 class="cart-item-description-title"><a href="#">Бабл-гам</a></h3>
                         <p class="cart-item-description-weight">1,5 кг х 320 ₽</p>
                       </div>
                       <p class="cart-item-price">480 ₽</p>
@@ -295,7 +297,7 @@
 
         <section class="product-cards">
           <h2 class="visually-hidden">Карточки товара</h2>
-          <ul class="cards-list">
+          <ul class="cards-list cards-list-catalog">
             <li class="card-item">
               <a href="#" class="card-img-link">
                 <img class="card-img" src="images/catalog1-raspberry.jpg" alt="Шарик мороженого малиновый" width="168"
@@ -346,7 +348,7 @@
               <a class="card-item-link" href="#">
                 <h3 class="card-item-title">Черника</h3>
               </a>
-              <p class="card-item-description">Крем-брюле с черничным джемом</p>
+              <p class="card-item-description">Крем-брюле с&nbsp;черничным джемом</p>
               <div class="card-order">
                 <p class="card-price">330 ₽/кг</p>
                 <button class="card-order-button">
@@ -367,7 +369,7 @@
               <a class="card-item-link" href="#">
                 <h3 class="card-item-title">Бабл-гам</h3>
               </a>
-              <p class="card-item-description">Ванильный пломбир со сладкой посыпкой</p>
+              <p class="card-item-description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
               <div class="card-order">
                 <p class="card-price">320 ₽/кг</p>
                 <button class="card-order-button">
@@ -409,7 +411,7 @@
               <a class="card-item-link" href="#">
                 <h3 class="card-item-title">Банан</h3>
               </a>
-              <p class="card-item-description">Сливочный пломбир с банановым вкусом</p>
+              <p class="card-item-description">Сливочный пломбир с&nbsp;банановым вкусом</p>
               <div class="card-order">
                 <p class="card-price">340 ₽/кг</p>
                 <button class="card-order-button">
@@ -451,7 +453,7 @@
               <a class="card-item-link" href="#">
                 <h3 class="card-item-title">Клубничка</h3>
               </a>
-              <p class="card-item-description">Сливочный пломбир с клубничным вкусом</p>
+              <p class="card-item-description">Сливочный пломбир с&nbsp;клубничным вкусом</p>
               <div class="card-order">
                 <p class="card-price">300 ₽/кг</p>
                 <button class="card-order-button">
@@ -493,7 +495,7 @@
               <a class="card-item-link" href="#">
                 <h3 class="card-item-title">Ментол</h3>
               </a>
-              <p class="card-item-description">Сливочный пломбир с ментоловым сиропом</p>
+              <p class="card-item-description">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
               <div class="card-order">
                 <p class="card-price">320 ₽/кг</p>
                 <button class="card-order-button">
@@ -534,7 +536,7 @@
               <a class="card-item-link" href="#">
                 <h3 class="card-item-title">Крем-брюле</h3>
               </a>
-              <p class="card-item-description">Классическое крем-брюле</p>
+              <p class="card-item-description">Классическое <br>крем-брюле</p>
               <div class="card-order">
                 <p class="card-price">280 ₽/кг</p>
                 <button class="card-order-button">
@@ -641,8 +643,8 @@
 
         <section class="footer-copyright">
           <h2 class="visually-hidden">HTML Академия</h2>
-          <a href="https://htmlacademy.ru/"><img src="images/logo-htmlacademy.svg" alt="Логотип HTML Академии"
-              width="93" height="27"></a>
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru/"><img src="images/logo-htmlacademy.svg"
+              alt="Логотип HTML Академии" width="93" height="27"></a>
           <p class="footer-copyright-text">Сделано в <a class="footer-copyright-link"
               href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
         </section>
