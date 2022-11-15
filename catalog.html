@@ -73,6 +73,15 @@
                 <form class="form-search" method="get" action="https://echo.htmlacademy.ru/">
                   <label class="visually-hidden" for="search">Поиск по сайту.</label>
                   <input class="field search-field" type="text" id="search" name="search" placeholder="Поиск по сайту">
+                  <button class="search-button" type="reset">
+                    <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z"
+                        fill="#2D3440" />
+                    </svg>
+                    <span class="visually-hidden">Очистить поле поиска.</span>
+                  </button>
                 </form>
               </div>
 
@@ -88,7 +97,7 @@
 
               <div class="popover popover-login">
                 <div class="popover-content">
-                  <h2 class="popover-login-title">Личный кабинет</h2>
+                  <p class="popover-login-title">Личный кабинет</p>
                   <form class="form-login" action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually-hidden" for="login">Введите ваш email.</label>
                     <input class="field login-field" type="email" name="login" placeholder="email@example.com"
@@ -121,13 +130,13 @@
 
               <div class="popover popover-cart">
                 <div class="popover-content">
-                  <h2 class="popover-title">Корзина</h2>
+                  <p class="popover-title">Корзина</p>
                   <ul class="cart-item-list">
                     <li class="cart-item">
                       <img class="cart-item-img" src="images/catalog1-raspberry.jpg" alt="Шарик мороженого малинка."
                         width="46" height="46">
                       <div class="cart-item-description">
-                        <h3 class="cart-item-description-title"><a href="#">Малинка</a></h3>
+                        <p class="cart-item-description-title"><a href="#">Малинка</a></p>
                         <p class="cart-item-description-weight">1 кг х 310 ₽</p>
                       </div>
                       <p class="cart-item-price">310 ₽</p>
@@ -145,7 +154,7 @@
                       <img class="cart-item-img" src="images/catalog4-bubble-gum.jpg" alt="Шарик мороженого бабл-гам."
                         width="46" height="46">
                       <div class="cart-item-description">
-                        <h3 class="cart-item-description-title"><a href="#">Бабл-гам</a></h3>
+                        <p class="cart-item-description-title"><a href="#">Бабл-гам</a></p>
                         <p class="cart-item-description-weight">1,5 кг х 320 ₽</p>
                       </div>
                       <p class="cart-item-price">480 ₽</p>
@@ -644,8 +653,9 @@
 
         <section class="footer-copyright">
           <h2 class="visually-hidden">HTML Академия.</h2>
-          <a class="footer-copyright-logo" href="https://htmlacademy.ru/"><img src="images/logo-htmlacademy.svg"
-              alt="Логотип HTML Академии." width="93" height="27"></a>
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
+            <img src="images/logo-htmlacademy.svg" alt="Логотип HTML Академии." width="93" height="27">
+          </a>
           <p class="footer-copyright-text">Сделано в <a class="footer-copyright-link"
               href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
         </section>
